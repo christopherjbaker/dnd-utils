@@ -1,4 +1,5 @@
 const cards = require('./cards');
+const keep = [ 'fool', 'jester' ];
 
 class Deck {
 	constructor() {
@@ -6,7 +7,7 @@ class Deck {
 	}
 
 	reset() {
-		this._deck = Object.keys(cards).map(name => ({ name, count: 0 }));
+		this._deck = Object.keys(cards);
 	}
 
 	draw() {
@@ -14,23 +15,18 @@ class Deck {
 			this.reset();
 		}
 
-		let deck = this.deck;
-		let card = deck[Math.floor(Math.random() * deck.length)];
+		let index = Math.floor(Math.random() * this._deck.length);
+		let card = this._deck[index];
 
-		return {
-			name: card.name,
-			text: cards[card.name],
-		};
-	}
+		if (!keep.includes(card)) {
+			this._deck.splice(index, 1);
+		}
 
-	get deck() {
-		return this._deck.filter(({ name, count }) => {
-			return count === 0 || [ 'Fool', 'Jester' ].contains(name);
-		});
+		return cards[card];
 	}
 
 	get isEmpty() {
-		return this.deck.filter(({ count }) => count === 0).length === 0;
+		return this._deck.filter(card => !keep.includes(card)).length === 0;
 	}
 }
 

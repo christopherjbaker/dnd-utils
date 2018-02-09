@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 const Deck = require('./deck');
+const wrapText = require('../lib/wrap-text');
 
 const count = +process.argv[2];
 if (isNaN(count)) {
@@ -8,5 +9,9 @@ if (isNaN(count)) {
 
 let deck = new Deck();
 for (let i = 0; i < count; i++) {
-	console.log(deck.draw());
+	const { name, text } = deck.draw();
+
+	console.log(`## ${name}`);
+	console.log(wrapText(text));
+	console.log('');
 }
