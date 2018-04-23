@@ -1,0 +1,16 @@
+{
+  "name": "factions-quiz",
+  "version": "1.0.0",
+  "private": true,
+  "homepage" : "http://christopherjbaker.github.io/dnd-utils/factions-quiz",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts -r ./preconfig.js start",
+    "build": "react-scripts -r ./preconfig.js build",
+    "test": "react-scripts -r ./preconfig.js test --env=jsdom"
+  }
+}
