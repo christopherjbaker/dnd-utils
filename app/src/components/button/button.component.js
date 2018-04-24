@@ -1,10 +1,14 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-import { Div, Input, Link } from './button.styled';
+import { Div, Input, Href, Link } from './button.styled';
 
-function getTag({ type, href }) {
+function getTag({ type, href, to }) {
 	if (href) {
+		return Href;
+	}
+
+	if (to) {
 		return Link;
 	}
 

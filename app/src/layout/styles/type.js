@@ -32,6 +32,7 @@ export default function type() {
 			color: #313f47;
 			line-height: 1.5;
 			margin: 0 0 0.75em 0;
+			text-transform: uppercase;
 		}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {

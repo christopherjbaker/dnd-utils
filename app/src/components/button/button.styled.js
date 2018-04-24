@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { Link as RouterLink } from 'react-router-dom';
 
 export const BaseButton = styled.div`
 	appearance: none;
@@ -57,4 +58,6 @@ export const Div = BaseButton.withComponent('div');
 
 export const Input = BaseButton.withComponent('input');
 
-export const Link = BaseButton.withComponent('a');
+export const Href = BaseButton.withComponent('a');
+
+export const Link = BaseButton.withComponent(RouterLink);
