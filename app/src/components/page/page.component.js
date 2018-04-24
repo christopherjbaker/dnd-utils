@@ -1,11 +1,9 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import './main.css';
 
-// import Footer from './components/footer';
-import Header from './components/header';
+import { Container, Header, Avatar, Image, Title, Subtitle } from './page.styled';
 
-export default class Main extends Component {
+export default class Page extends Component {
 	static propTypes = {
 		avatar: PropTypes.string,
 		title: PropTypes.string.isRequired,
@@ -17,20 +15,20 @@ export default class Main extends Component {
 		const { avatar, title, subtitle, children, ...props } = this.props;
 
 		return (
-			<section {...props} id="main">
+			<Container {...props}>
 				<Header>
 					{ avatar ? (
-						<span className="avatar"><img src={avatar} alt="" /></span>
+						<Avatar><Image src={avatar} alt="" /></Avatar>
 					) : null }
 
-					<h1>{title}</h1>
-					<p>{subtitle}</p>
+					<Title>{title}</Title>
+					<Subtitle>{subtitle}</Subtitle>
 				</Header>
 
 				<hr />
 
 				{children}
-			</section>
+			</Container>
 		);
 	}
 }

@@ -1,4 +1,4 @@
-import Button from './button.js';
+import Button from './button.component';
 export default Button;
 
-export * from './button.js';
+export * from './button.component';

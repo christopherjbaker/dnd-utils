@@ -1,4 +1,4 @@
-import Layout from './layout.js';
+import Layout from './layout.component';
 export default Layout;
 
-export * from './layout.js';
+export * from './layout.component';
