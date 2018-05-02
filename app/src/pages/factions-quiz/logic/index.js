@@ -6,7 +6,7 @@ import { encode, decode, decodeRandom } from './code';
 const levels = [
 	{ value:  1.0, label: 'Very Accurate' },
 	{ value:  0.5, label: 'Moderately Accurate' },
-	// { value:  0.0, label: 'Neither Accurate Nor Inaccurate' },
+	{ value:  0.0, label: 'Neither Accurate Nor Inaccurate' },
 	{ value: -0.5, label: 'Moderately Inaccurate' },
 	{ value: -1.0, label: 'Very Inaccurate' },
 ];
@@ -66,13 +66,14 @@ export default function getDetails(secret) {
 	const { seed, sectionIndex, statementIndex, categories } = parseSecret(secret);
 
 	if (typeof seed === 'undefined') {
-		const max = Math.max(...Object.keys(categories).map(category => categories[category]));
+		const max = Math.max(...Object.keys(categories).map(category => Math.abs(categories[category])));
+
 		return {
 			section: 'Player Results',
 			responses: Object.keys(categories).map((category) => ({
 				label: category,
 				secret: secret,
-				value: categories[category] / max,
+				value: (categories[category] + max) / (max * 2),
 			})),
 		};
 	}
