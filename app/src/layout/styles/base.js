@@ -8,7 +8,7 @@ export default function type() {
 
 		hr {
 			border: 0;
-			border-bottom: solid 1px #c8cccf;
+			border-bottom: solid 1px ${props => props.theme.midground};
 			margin: 2em 0;
 		}
 

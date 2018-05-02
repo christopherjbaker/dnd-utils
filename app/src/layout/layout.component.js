@@ -22,7 +22,7 @@ export default class Button extends Component {
 					<Footer {...props}>
 						<FooterList>
 							<FooterListItem>
-								Design: <Link href="http://html5up.net">HTML5 UP</Link>
+								Design: <Link href="https://html5up.net/identity">HTML5 UP</Link>
 							</FooterListItem>
 						</FooterList>
 					</Footer>

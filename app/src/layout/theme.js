@@ -17,4 +17,9 @@ const media = Object.keys(sizes).reduce((media, label) => {
 
 export default {
 	...media,
+
+	accent: '#ff7496',
+	foreground: '#313f47',
+	midground: '#c8cccf',
+	background: '#ffffff',
 };

@@ -77,7 +77,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 }
 
 body, input, select, textarea {
-	color: #414f57;
+	color: #313f47;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 14pt;
 	font-weight: 300;

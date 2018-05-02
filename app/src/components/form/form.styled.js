@@ -28,7 +28,7 @@ export const SelectWrapper = styled.div`
 	}
 
 	:before {
-		color: #c8cccf;
+		color: ${props => props.theme.midground};
 		display: block;
 		height: 2.75em;
 		line-height: 2.75em;
@@ -44,7 +44,7 @@ export const SelectWrapper = styled.div`
 export const Select = styled.select`
 	appearance: none;
 	border-radius: 4px;
-	border: solid 1px #c8cccf;
+	border: solid 1px ${props => props.theme.midground};
 	color: inherit;
 	display: block;
 	outline: 0;
@@ -58,7 +58,7 @@ export const Select = styled.select`
 	}
 
 	:focus {
-		border-color: #ff7496;
+		border-color: ${props => props.theme.accent};
 	}
 `;
 
@@ -69,7 +69,7 @@ export const SelectOption = styled.option`
 export const Textarea = styled.textarea`
 	appearance: none;
 	border-radius: 4px;
-	border: solid 1px #c8cccf;
+	border: solid 1px ${props => props.theme.midground};
 	color: inherit;
 	display: block;
 	outline: 0;
@@ -82,14 +82,14 @@ export const Textarea = styled.textarea`
 	}
 
 	:focus {
-		border-color: #ff7496;
+		border-color: ${props => props.theme.accent};
 	}
 `;
 
 const BaseStringInput = styled.input`
 	appearance: none;
 	border-radius: 4px;
-	border: solid 1px #c8cccf;
+	border: solid 1px ${props => props.theme.midground};
 	color: inherit;
 	display: block;
 	outline: 0;
@@ -103,7 +103,7 @@ const BaseStringInput = styled.input`
 	}
 
 	:focus {
-		border-color: #ff7496;
+		border-color: ${props => props.theme.accent};
 	}
 `;
 
@@ -114,29 +114,29 @@ export const Telephone = BaseStringInput.extend.attrs({ type: 'tel' })``;
 
 injectGlobal`
 	::-webkit-input-placeholder {
-		color: #616f77 !important;
+		color: #c8cccf !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #616f77 !important;
+		color: #c8cccf !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #616f77 !important;
+		color: #c8cccf !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #616f77 !important;
+		color: #c8cccf !important;
 		opacity: 1.0;
 	}
 `;
 
 
 export const Label = styled.label`
-	color: #313f47;
+	color: ${props => props.theme.foreground};
 	display: block;
 	font-size: 0.9em;
 	margin: 0 0 0.75em 0;
@@ -153,7 +153,7 @@ const BaseClickInput = styled.input`
 
 	&  + label {
 		text-decoration: none;
-		color: #414f57;
+		color: ${props => props.theme.foreground};
 		cursor: pointer;
 		display: inline-block;
 		font-size: 1em;
@@ -172,7 +172,7 @@ const BaseClickInput = styled.input`
 
 		:before {
 			border-radius: 4px;
-			border: solid 1px #c8cccf;
+			border: solid 1px ${props => props.theme.midground};
 			content: '';
 			display: inline-block;
 			height: 1.65em;
@@ -186,12 +186,12 @@ const BaseClickInput = styled.input`
 	}
 
 	&:checked + label:before {
-		color: #ff7496;
+		color: ${props => props.theme.accent};
 		content: '\f00c';
 	}
 
 	&:focus + label:before {
-		border-color: #ff7496;
+		border-color: ${props => props.theme.accent};
 	}
 `;
 

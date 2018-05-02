@@ -10,16 +10,16 @@ export const BaseButton = styled.div`
 	padding: 0 1.5em;
 	background-color: transparent;
 	border-radius: 4px;
-	border: solid 1px #c8cccf;
-	color: #414f57 !important;
+	border: solid 1px ${props => props.theme.midground};
+	color: ${props => props.theme.foreground};
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
 
 	:hover {
-		border-color: #ff7496;
-		color: #ff7496 !important;
+		border-color: ${props => props.theme.accent};
+		color: ${props => props.theme.accent};
 	}
 
 	:disabled {

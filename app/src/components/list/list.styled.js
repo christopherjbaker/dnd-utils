@@ -14,7 +14,7 @@ export const List = styled.ul`
 		padding-left: 0;
 
 		li {
-			border-top: solid 1px #c8cccf;
+			border-top: solid 1px ${props => props.theme.midground};
 			padding: 0.5em 0;
 
 			:first-child {
@@ -42,7 +42,7 @@ export const List = styled.ul`
 			width: 3.75em;
 			height: 3.75em;
 			border-radius: 100%;
-			border: solid 1px #c8cccf;
+			border: solid 1px ${props => props.theme.midground};
 			line-height: 3.75em;
 			overflow: hidden;
 			text-align: center;
@@ -56,12 +56,12 @@ export const List = styled.ul`
 				font-weight: normal;
 				text-transform: none !important;
 
-				color: #ffffff;
-				text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+				color: ${props => props.theme.background};
+				text-shadow: 1.25px 0px 0px ${props => props.theme.midground}, -1.25px 0px 0px ${props => props.theme.midground}, 0px 1.25px 0px ${props => props.theme.midground}, 0px -1.25px 0px ${props => props.theme.midground};
 			}
 
 			:hover:before {
-				text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+				text-shadow: 1.25px 0px 0px ${props => props.theme.accent}, -1.25px 0px 0px ${props => props.theme.accent}, 0px 1.25px 0px ${props => props.theme.accent}, 0px -1.25px 0px ${props => props.theme.accent};
 			}
 
 			:before {
@@ -77,7 +77,7 @@ export const List = styled.ul`
 			}
 
 			:hover {
-				border-color: #ff7496;
+				border-color: ${props => props.theme.accent};
 			}
 		}
 

@@ -23,7 +23,7 @@ export const Response = Link.extend`
 			top: 0; bottom: 0;
 
 			width: ${props.value * 100}%;
-			background: #ff7496;
+			background: ${props => props.theme.accent};
 			opacity: 0.15;
 		}
 	`}

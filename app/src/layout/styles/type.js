@@ -13,11 +13,11 @@ export default function type() {
 		}
 
 		a:hover {
-			color: #ff7496;
+			color: ${props => props.theme.accent};
 		}
 
 		strong, b {
-			color: #313f47;
+			color: ${props => props.theme.foreground};
 		}
 
 		em, i {
@@ -29,7 +29,7 @@ export default function type() {
 		}
 
 		h1, h2, h3, h4, h5, h6 {
-			color: #313f47;
+			color: ${props => props.theme.foreground};
 			line-height: 1.5;
 			margin: 0 0 0.75em 0;
 			text-transform: uppercase;
