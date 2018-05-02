@@ -9,7 +9,7 @@ export default function type() {
 		hr {
 			border: 0;
 			border-bottom: solid 1px #c8cccf;
-			margin: 3em 0;
+			margin: 2em 0;
 		}
 
 		table {

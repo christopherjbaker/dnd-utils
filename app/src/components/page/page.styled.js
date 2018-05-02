@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	position: relative;
 	max-width: 100%;
-	min-width: 27em;
-	padding: 4.5em 3em 3em 3em ;
+	width: 36em;
+	padding: 3.5em 2em 2em 2em;
 	background: #ffffff;
 	border-radius: 4px;
 	border: solid 1px #c8cccf;
