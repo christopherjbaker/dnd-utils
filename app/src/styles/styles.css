@@ -42,11 +42,24 @@ body {
 
 body {
 	background-color: #ffffff;
-	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/background.jpg");
+	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
 	background-repeat: repeat, no-repeat, no-repeat;
 	background-size: 100px 100px, cover, cover;
 	background-position: top left, center center, center center;
 	background-attachment: fixed, fixed, fixed;
+}
+
+body.bg-dmg {
+	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/background-dmg.jpg");
+}
+body.bg-lmop {
+	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/background-lmop.jpg");
+}
+body.bg-mm {
+	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/background-mm.jpg");
+}
+body.bg-phb {
+	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/background-phb.jpg");
 }
 
 body:after {
