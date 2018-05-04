@@ -95,7 +95,7 @@ body, input, select, textarea {
 	font-size: 14pt;
 	font-weight: 300;
 	line-height: 2;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.15em;
 }
 
 @media screen and (max-width: 1680px) {

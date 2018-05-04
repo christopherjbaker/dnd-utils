@@ -59,5 +59,14 @@ export const FooterListItem = BaseListItem.extend`
 	}
 `;
 
+export const FooterDisclaimer = styled.div`
+	margin: 0 auto;
+	max-width: 100%;
+	width: 72em;
+	line-height: 1.25;
+	font-size: 75%;
+	letter-spacing: 0.05em;
+`;
+
 export const Link = styled.a`
 `;
