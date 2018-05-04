@@ -31,7 +31,7 @@ export default class FactionsQuiz extends Component {
 		const { section, statement, responses } = getDetails(secret);
 
 		return (
-			<Page title="Player Factions Quiz" subtitle="For Dungeons and Dragons, 5th Edition">
+			<Page title="Player Factions Quiz" subtitle="For Dungeons and Dragons&reg;, 5th Edition">
 				<Section>{section}</Section>
 				<Statement>{statement}</Statement>
 				{ responses ? responses.map(({ label, secret, value }) => (
