@@ -9,6 +9,7 @@ export default class Dashboard extends Component {
 		return (
 			<Page title="D&D Utils" subtitle="For Dungeons and Dragons&reg;, 5th Edition">
 				<Button to="/factions-quiz">Factions Quiz</Button>
+				<Button to="/voronoi-map">Voronoi Map</Button>
 			</Page>
 		);
 	}
