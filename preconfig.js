@@ -13,6 +13,14 @@ setImmediate(() => {
 		const config = require(webpackConfigs[process.env.NODE_ENV]);
 
 		config.resolve.alias['~'] = paths.appSrc;
+
+		for (let i = 0; i < config.plugins.length; i++) {
+			if (config.plugins[i].constructor.name !== 'SWPrecacheWebpackPlugin') {
+				continue;
+			}
+
+			config.plugins.splice(i--, 1);
+		}
 	}
 });
 
