@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://christopherjbaker.github.io/dnd-utils",
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts -r ./preconfig.js start",
     "build": "react-scripts -r ./preconfig.js build",
