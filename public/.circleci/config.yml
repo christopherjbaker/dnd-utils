@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    branches:
+      ignore:
+        - gh_pages
+    steps:
+      - run:
+          name: Skip
+          command: echo "Skipping tests on gh-pages branch"
