@@ -1,4 +1,4 @@
-import Layout from './layout.component';
-export default Layout;
+import View from './layout.view';
+export default View;
 
-export * from './layout.component';
+export * from './layout.view';

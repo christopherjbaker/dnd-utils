@@ -1,4 +1,4 @@
-import Page from './page.component';
-export default Page;
+import View from './page.view';
+export default View;
 
-export * from './page.component';
+export * from './page.view';

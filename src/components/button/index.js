@@ -1,4 +1,4 @@
-import Button from './button.component';
-export default Button;
+import View from './button.view';
+export default View;
 
-export * from './button.component';
+export * from './button.view';
